@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinalux - [CATEGORIA]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .categoria-header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+
+        .categoria-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .categoria-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff69b4, #ff1493);
+        }
+
+        .categoria-subtitle {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .producto-item {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .producto-imagen {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .producto-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .producto-nombre {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .producto-descripcion {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .categoria-title {
+                font-size: 2.5rem;
+            }
+
+            .categoria-subtitle {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .productos-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contact-header">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +34 646691258</span>
+            </div>
+            <div class="logo">
+                <h1>VINALUX</h1>
+                <p class="slogan">Diseño, detalle y distinción</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="categoria-header">
+            <h1 class="categoria-title">[CATEGORIA]</h1>
+            <p class="categoria-subtitle">[FRASE_RELACIONADA]</p>
+        </section>
+
+        <section class="productos-grid">
+            <!-- Productos se añadirán aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/people/Vinalux/100085050744900/?mibextid=wwXIfr&rdid=bEiNQdeQstPjIgC3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16Qor2Ex7f%2F%3Fmibextid%3DwwXIfr"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/vinalux_/?igsh=MXNueXBxbGh1cTdsNw%3D%3D&utm_source=qr#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Vinalux. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html> 
